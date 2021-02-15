@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/sweetalert.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
 <!--        <link rel="stylesheet" href="../css/calculator.css">-->
-    <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-
+    <link rel="stylesheet" href="css/style.css?ver=119">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="27013792-a1d4-48b1-bddd-f81c3570e43a" data-blockingmode="auto" type="text/javascript"></script> -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124026490-1"></script>
         <script>
@@ -35,7 +35,17 @@
             gtag('config', 'UA-124026490-1');
         </script>
 
-        <!-- Yandex.Metrika counter -->
+		<!-- Global site tag (gtag.js) - Google Ads: 776989599 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-776989599"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'AW-776989599');
+		</script>
+
+        <!-- Yandex.Metrika counter
         <script>
             (function (m, e, t, r, i, k, a) {
                 m[i] = m[i] || function () {
@@ -59,7 +69,7 @@
         <!-- /Yandex.Metrika counter -->
 
 
-        <script>
+        <!-- <script>
             !function (f, b, e, v, n, t, s) {
                 if (f.fbq) return;
                 n = f.fbq = function () {
@@ -80,7 +90,7 @@
                 'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '2261969203857853');
             fbq('track', 'PageView');
-        </script>
+        </script> -->
         <noscript><img height="1" width="1" style="display:none"
                        src="https://www.facebook.com/tr?id=2261969203857853&ev=PageView&noscript=1"
         /></noscript>
@@ -106,32 +116,33 @@
                     <a href="https://beemloop.com/" class="go-to-home">GO TO HOME PAGE</a>
                 </div>
                 <p>Video Configurator</p>
-                <p class="tuna-trial">Please fill out questionnaire to get a quote.</p>
-                <hr>
+                <!--<p class="tuna-trial">Please fill out questionnaire to get a quote.</p>
+                <hr> -->
+				<p>Please fill out questionnaire to get a quote.</p>
                 <div class="tuna-slider-container">
                     <ul class="tuna-slider">
                         <li class='tuna-signup-testimonial'>
                             <i class="icon icon-quill"></i>
                             <p>We are satisfied! The guys are just wizards!</p>
-                            <img src='../img/clients-logo/pharmap.png' alt="">
+                            <img src='../img/clients-logo/pharmap1.png' alt="">
                             <b>James Kim<span>‒ Head of Corporate Marketing</span></b>
                         </li>
                         <li class='tuna-signup-testimonial'>
                             <i class="icon icon-quill"></i>
                             <p>As a young and evolving team, they're flexible in providing services and can make changes quickly.</p>
-                            <img src='../img/clients-logo/hilynk.png' alt="">
+							<img src='../img/clients-logo/hilynk6.png' alt="">
                             <b>Emma Izatt<span>‒ CEO, Networking Platform</span></b>
                         </li>
                         <li class='tuna-signup-testimonial'>
                             <i class="icon icon-quill"></i>
                             <p>From our first project together, I was impressed with their team.</p>
-                            <img src='../img/clients-logo/geeba.png' alt="">
+                            <img src='../img/clients-logo/geeba1.png' alt="">
                             <b>Clare Bayley<span>‒ Executive Producer</span></b>
                         </li>
                         <li class='tuna-signup-testimonial'>
                             <i class="icon icon-quill"></i>
                             <p>They stuck to our budget without compromising quality.</p>
-                            <img src='../img/clients-logo/simplebyte.png' alt="">
+                            <img src='../img/clients-logo/simplebyte1.png' alt="">
                             <b>Jessica Ross<span> ‒ Director of Communication</span></b>
                         </li>
                     </ul>
@@ -143,304 +154,216 @@
                     STEP <span class="step-current">1</span>/<span class="step-count"></span>
                 </div>
 
-                <div class="tuna-steps ">
-
-                    <div class="step step-active" data-step-id='1'>
-                        <div class="step-label">What's your budget?</div>
-                        <label class="radio-inline"><input type="radio" value="less than $3000" name="tn_money" checked=""> less than $3000</label>
-                        <label class="radio-inline"><input type="radio" value="$3000 - $8000" name="tn_money"> $3000 - $8000</label>
-                        <label class="radio-inline"><input type="radio" value="more than $8000" name="tn_money">more than $8000</label>
-                        <label class="radio-inline"><input type="radio" value="not sure" name="tn_money">not sure</label>
-<!--                        <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>-->
-                    </div>
+                <div class="tuna-steps">
 
 
-                    <div class="step " data-step-id='2'>
+                   <!--<div class="step step-active" data-step-id='1' id="block_kind">
+                        <div class="step-label" >What kind of business do you have?</div>
+                        <label class="radio-inline"><input type="radio" value="Service" name="tn_kind" checked=""> Service</label>
+                        <label class="radio-inline"><input type="radio" value="Product" name="tn_kind">  Product</label>
+                        <label class="radio-inline"><input type="radio" value="Production" name="tn_kind">  Production</label>
+
+                       <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>
+                    </div> -->
+
+
+                    <div class="step step-active" data-step-id='1' id="block_time">
                         <div class="step-label">How long would you like your video to be?</div>
-                        <label class="radio-inline"><input type="radio" value="45s" name="tn_time" >45s</label>
+                        <label class="radio-inline"><input type="radio" value="45s" name="tn_time" checked="">45s</label>
                         <label class="radio-inline"><input type="radio" value="60s" name="tn_time">60s</label>
-                        <label class="radio-inline"><input type="radio" value="90s" name="tn_time" checked="">90s</label>
-                        <label class="radio-inline"><input type="radio" value="120s" name="tn_time">120s</label>
-                        <label class="radio-inline"><input type="radio" value="longer" name="tn_time">longer</label>
-                        <label class="radio-inline"><input type="radio" value="not sure" name="tn_time">not sure</label>
+                        <label class="radio-inline"><input type="radio" value="90s" name="tn_time">90s+</label>
                         <!--                        <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>-->
                     </div>
 
+                    <div class="step" data-step-id='2' id="block_money">
+                        <div class="step-label">What is your budget?</div>
+                        <label class="radio-inline"><input type="radio" value="up to $1000" name="tn_money" checked=""> up to $1000</label>
+                        <label class="radio-inline"><input type="radio" value="$1000 - $3000" name="tn_money"> $1000 - $3000</label>
+                        <label class="radio-inline"><input type="radio" value="more than $3000" name="tn_money"> more than $3000</label>
+                        <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>
+                    </div>
 
-                    <div  class="step " data-step-id='3'>
-                        <div class="step-label">Please select illustration styles that you like</div>
+                    <div class="step" data-step-id='3'  id="block_script">
+                        <div class="step-label">Do you have a script? </div>
+                        <label class="radio-inline"><input type="radio" value="Yes" name="tn_script" checked=""> Yes, I have a script.</label>
+                        <label class="radio-inline"><input type="radio" value="No" name="tn_script"> No.</label>
+<!--                        <div class='help-error'><i class="icon icon-warning"></i> You must select an option at least!</div>-->
+                    </div>
+
+                    <div  class="step " data-step-id='4' id="datastep7">
+                        <div class="step-label">Please select a style of illustrations.</div>
                         <div class="style-of-video__space-wrap">
-                            <div class="col-xs-12 col-sm-4 item ">
+                            <div class="col-xs-12 col-sm-4 item style-pic">
                                 <div>
-                                    <a href="img/portfolio/1/Rockenfeller13.jpg" class="gallery-item link ">
+                                    <a href="img/style/style1.jpg" class="gallery-item link ">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>Hilynk</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
                                         </div>
-                                            <img src="img/portfolio/1/Rockenfeller13.jpg" alt="">
+                                            <img src="img/style/style1.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/1/Rockenfeller3.jpg'>Style 1</a>" name="tn_hobbies[]">Style 1</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio1" value="<a href='https://beemloop.com/get-a-quote/img/style/style1.jpg'>Style 1</a>" name="tn_hobbies[]">Style 1</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item" >
+                            <div class="col-xs-12 col-sm-4 item style-pic" >
                                 <div>
-                                    <a href="img/portfolio/2/4.jpg" class="gallery-item2 link">
+                                    <a href="img/style/style2.jpg" class="gallery-item2 link">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>Pharmap</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
                                         </div>
 
-                                            <img src="img/portfolio/2/1.jpg" alt="">
+                                            <img src="img/style/style2.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/2/3.jpg'>Style 2</a>" name="tn_hobbies[]">Style 2</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio2" value="<a href='https://beemloop.com/get-a-quote/img/style/style2.jpg'>Style 2</a>" name="tn_hobbies[]">Style 2</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item ">
+                            <div class="col-xs-12 col-sm-4 item style-pic">
                                 <div>
-                                    <a href="img/portfolio/3/Netsol1.jpg" class="gallery-item3 link">
+                                    <a href="img/style/style3.jpg" class="gallery-item3 link">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>Reikartz</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
                                         </div>
-                                            <img src="img/portfolio/3/Netsol1.jpg" alt="">
+                                            <img src="img/style/style3.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
 
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/3/Netsol1.jpg'>Style 3</a>" name="tn_hobbies[]">Style 3</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio3" value="<a href='https://beemloop.com/get-a-quote/img/style/style3.jpg'>Style 3</a>" name="tn_hobbies[]">Style 3</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item ">
+                            <div class="col-xs-12 col-sm-4 item style-pic">
                                 <div>
-                                    <a href="img/portfolio/4/Verasity2.jpg" class="gallery-item4 link">
+                                    <a href="img/style/style4.jpg" class="gallery-item4 link">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>Verasity Explainer Video</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
                                         </div>
-                                            <img src="img/portfolio/4/Verasity2.jpg" alt="">
+                                            <img src="img/style/style4.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/4/Verasity2.jpg'>Style 4</a>" name="tn_hobbies[]">Style 4</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio4" value="<a href='https://beemloop.com/get-a-quote/img/style/style4.jpg'>Style 4</a>" name="tn_hobbies[]">Style 4</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item ">
+                            <div class="col-xs-12 col-sm-4 item style-pic">
                                 <div>
-                                    <a href="img/portfolio/5/Aspire1d.jpg" class="gallery-item5 link">
+                                    <a href="img/style/style5.jpg" class="gallery-item5 link">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>FullToken</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
 
                                         </div>
 
-                                            <img src="img/portfolio/5/Aspire1d.jpg" alt="">
+                                            <img src="img/style/style5.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/5/Aspire1d.jpg'>Style 5</a>" name="tn_hobbies[]">Style 5</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio5" value="<a href='https://beemloop.com/get-a-quote/img/style/style5.jpg'>Style 5</a>" name="tn_hobbies[]">Style 5</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item ">
+                            <div class="col-xs-12 col-sm-4 item style-pic">
                                 <div>
-                                    <a href="img/portfolio/6/Elias3.jpg" class="gallery-item6 link">
+                                    <a href="img/style/style6.jpg" class="gallery-item6 link">
                                         <div class="overlay">
                                             <div class="arrow-left"></div>
                                             <div class="rectangle"></div>
                                         </div>
                                         <div class="description">
 <!--                                            <strong>SimpleByte</strong>-->
-                                            <p><span>Click to see more</span></p>
+                                            <p><span>Click to see the full size picture</span></p>
                                         </div>
-                                            <img src="img/portfolio/6/Elias3.jpg" alt="">
+                                            <img src="img/style/style6.jpg" alt="">
                                     </a>
                                     <div class="clearfix"></div>
                                 </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/6/Elias3.jpg'>Style 6</a>" name="tn_hobbies[]">Style 6</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="tn_style_radio6" value="<a href='https://beemloop.com/get-a-quote/img/style/style6.jpg'>Style 6</a>" name="tn_hobbies[]">Style 6</label>
                             </div>
 
-                            <div class="col-xs-12 col-sm-4 item last-wrapper-item">
-                                <div>
-                                    <a href="img/portfolio/7/SHK1.jpg" class="gallery-item7 link">
-                                        <div class="overlay">
-                                            <div class="arrow-left"></div>
-                                            <div class="rectangle"></div>
-                                        </div>
-                                        <div class="description">
-<!--                                            <strong>Geeba</strong>-->
-                                            <p><span>Click to see more</span></p>
-                                        </div>
-                                            <img src="img/portfolio/7/SHK1.jpg" alt="">
-                                    </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/7/Tanzschmiede3.jpg'>Style 7</a>" name="tn_hobbies[]">Style 7</label>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-4 item last-wrapper-item">
-                                <div>
-                                    <a href="img/portfolio/8/KDMotion1.jpg" class="gallery-item8 link">
-                                        <div class="overlay">
-                                            <div class="arrow-left"></div>
-                                            <div class="rectangle"></div>
-                                        </div>
-                                        <div class="description">
-<!--                                            <strong>The Bar</strong>-->
-                                            <p><span>Click to see more</span></p>
-                                        </div>
-                                            <img src="img/portfolio/8/KDMotion1.jpg" alt="">
-                                    </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/8/KDMotion1.jpg'>Style 8</a>" name="tn_hobbies[]">Style 8</label>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-4 item last-wrapper-item">
-                                <div>
-                                    <a href="img/portfolio/9/Scene1.jpg" class="gallery-item9 link">
-                                        <div class="overlay">
-                                            <div class="arrow-left"></div>
-                                            <div class="rectangle"></div>
-                                        </div>
-                                        <div class="description">
-<!--                                            <strong>Beani.tv Advertisement</strong>-->
-                                            <p><span>Click to see more</span></p>
-                                        </div>
-                                            <img src="img/portfolio/9/Scene1.jpg" alt="">
-                                    </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <label class="checkbox-inline"><input type="checkbox" value="<a href='https://beemloop.com/get-a-quote/img/portfolio/9/Scene1.jpg'>Style 9</a>" name="tn_hobbies[]">Style 9</label>
-                            </div>
                         </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item" href="img/portfolio/1/2.png"></a>
-                            <a class="gallery-item" href="img/portfolio/1/3.png"></a>
-                            <a class="gallery-item" href="img/portfolio/1/Rockenfeller3.jpg"></a>
-                            <a class="gallery-item" href="img/portfolio/1/Rockenfeller2.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item2" href="img/portfolio/2/2.jpg"></a>
-                            <a class="gallery-item2" href="img/portfolio/2/3.jpg"></a>
-                            <a class="gallery-item2" href="img/portfolio/2/5.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item3" href="img/portfolio/3/Geeba3.jpg"></a>
-                            <a class="gallery-item3" href="img/portfolio/3/Geeba2.jpg"></a>
-                            <a class="gallery-item3" href="img/portfolio/3/Geeba.jpg"></a>
-                            <a href="http://vimeo.com/293711349" class="mfp-iframe gallery-item3"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item4" href="img/portfolio/4/Verasity7.jpg"></a>
-                            <a class="gallery-item4" href="img/portfolio/4/Verasity5.png"></a>
-                            <a class="gallery-item4" href="img/portfolio/4/Netsol2.jpg"></a>
-                            <a href="http://vimeo.com/357734263" class="mfp-iframe gallery-item4"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item5" href="img/portfolio/5/MySolar9a.jpg"></a>
-                            <a class="gallery-item5" href="img/portfolio/5/MySolar3.jpg"></a>
-                            <a class="gallery-item5" href="img/portfolio/5/Aspire3.jpg"></a>
-                            <a class="gallery-item5" href="img/portfolio/5/Aspire2.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item6" href="img/portfolio/6/Visystem14.jpg"></a>
-                            <a class="gallery-item6" href="img/portfolio/6/Visystem9.jpg"></a>
-                            <a class="gallery-item6" href="img/portfolio/6/Visystem1c.jpg"></a>
-                            <a class="gallery-item6" href="img/portfolio/6/Elias2.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item7" href="img/portfolio/7/Unipos1.jpg"></a>
-                            <a class="gallery-item7" href="img/portfolio/7/Tanzschmiede5.jpg"></a>
-                            <a class="gallery-item7" href="img/portfolio/7/Tanzschmiede3.jpg"></a>
-                            <a class="gallery-item7" href="img/portfolio/7/Tanzschmiede1.jpg"></a>
-                            <a class="gallery-item7" href="img/portfolio/7/SHK2.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item8" href="img/portfolio/8/KDMotion3.jpg"></a>
-                            <a class="gallery-item8" href="img/portfolio/8/KDMotion2.jpg"></a>
-                            <a class="gallery-item8" href="img/portfolio/8/drug2.jpg"></a>
-                        </div>
-                        <div  class="white-popup-block mfp-hide">
-                            <a class="gallery-item9" href="img/portfolio/9/Scene3.jpg"></a>
-                            <a class="gallery-item9" href="img/portfolio/9/Scene2.jpg"></a>
-                            <a class="gallery-item9" href="img/portfolio/9/NOOkids3.jpg"></a>
-                            <a class="gallery-item9" href="img/portfolio/9/Nookids2.jpg"></a>
-                            <a href="http://vimeo.com/375507793" class="mfp-iframe gallery-item9"></a>
-                        </div>
-                        <div class='help-error'><i class="icon icon-warning"></i>You must select 1 style at least.</div>
+                        <div class='help-error'><i class="icon icon-warning"></i>You may select from 1 to 3 styles.</div>
                     </div>
 
 
-                    <div class="step" data-step-id='4'>
-                        <p class="step__details">Choose the voice you like from <a href="https://beemloop.com/voiceoverartists.html" target="_blank">the list of our voice artists</a>.
-                            <br> <span>Click on the name to copy and paste into the form below.</span></p>
+                    <div class="step" data-step-id='5'>
+                        <p class="step__details">Choose the voice you like from <a href="../vc.html" class="select-link"  id="choose-voice">the list of our voice artists</a> or <a href="javascript:void(0)" class="skip_voice" tabindex="0">skip</a> this step.</p>
                         <label class="formLabel" for="tn_voice"></label>
-                        <input type="text" class="formInput" id='tn_voice' name="tn_voice" autocomplete="off" spellcheck="false" placeholder="Paste here voiceover artist name">
-                        <div class='help-error'><i class="icon icon-warning"></i>Choose voiceover!</div>
-                        <div class="help-info">Ex. Anthony Pica</div>
+                        <input type="text" class="formInput" id='tn_voice' name="tn_voice" autocomplete="off" spellcheck="false" placeholder="">
+                    </div>
+                    <div class="step " data-step-id='6'>
+                        <p class="step__details">Do you have special wishes to the video? </p>
+                        <!---<textarea  class="formInput" id='tn_comment' name="tn_commen t" autocomplete="off" spellcheck="false"></textarea>-->
+						<input type="text" class="formInput" id='tn_comment_one' name="tn_comment_one" autocomplete="off" spellcheck="false" maxlength="39">
+						<input type="text" class="formInput" id='tn_comment_two' name="tn_comment_two" autocomplete="off" spellcheck="false" maxlength="39">
+						<input type="text" class="formInput" id='tn_comment_three' name="tn_comment_three" autocomplete="off" spellcheck="false" maxlength="31">
+                        <div class='help-error'><i class="icon icon-warning"></i> Please enter any comment concerning your order here.</div>
                     </div>
 
-                    <div class="step " data-step-id='5'>
-                        <label class="formLabel" for="tn_name">What is your name?</label>
+                    <div class="step" data-step-id='7'>
+                        <!--<label class="formLabel" for="tn_name">What is your name?</label>-->
+						<p class="step__details">What is your name?</p>
                         <input type="text" class="formInput" id='tn_name' name="tn_name" autocomplete="off" spellcheck="false">
                         <div class='help-error'><i class="icon icon-warning"></i> Name field is required!</div>
                         <div class="help-info">Ex. John Smith</div>
                     </div>
 
+                    <div class="step " data-step-id='8'>
+                        <p class="step__details">Put a link to your website.</p>
+                        <input type="text" class="formInput" id='tn_url' name="tn_url" autocomplete="off" spellcheck="false">
+                        <div class='help-error'><i class="icon icon-warning"></i> This field is required.</div>
+                       <!--    <div class="help-info">Ex. mywebsite.com</div>-->
+                    </div>
 
-                    <div class="step " data-step-id='6'>
-                        <label class="formLabel" for="tn_email">What is your email?</label>
+                    <div class="step " data-step-id='9'>
+                        <p class="step__details">Please leave your email to get a free quote.</p>
                         <input type="email" class="formInput" id='tn_email' name="tn_email" autocomplete="off" spellcheck="false" >
                         <div class='help-error'><i class="icon icon-warning"></i> You have entered an invalid e-mail address. Please try again!</div>
                         <div class="help-info">Ex. name@company.com</div>
                     </div>
-                    <div class="step " data-step-id='7'>
-                        <label class="formLabel" for="tn_comment">Type your message here</label>
-                        <textarea  class="formInput" id='tn_comment' name="tn_commen t" autocomplete="off" spellcheck="false"></textarea>
-                        <div class='help-error'><i class="icon icon-warning"></i> Please enter any comment concerning your order here. Please try again!</div>
-                        <div class="help-info">Feel free to send us an e-mail </div>
-                    </div>
 
-                    <div class="step step-confirm " data-step-id='8'>
+
+                    <div class="step step-confirm " data-step-id='10'>
                         <form action='post' name='signupForm' autocomplete="off" class="form-horizontal">
 
-                            <div class="form-group">
-                                <div class="control-label col-md-4">Your budget</div>
+                            <!--<div class="form-group">
+                                <div class="control-label col-md-4">Kind of business</div>
                                 <div class="col-md-8">
                                     <div class="input-container">
-                                        <select name="money" class="selectpicker form-control">
-                                            <option value="less than $3000">less than $3000</option>
-                                            <option value="$3000 - $8000">$3000 - $8000</option>
-                                            <option value="more than $8000">more than $8000</option>
-                                            <option value="not sure">not sure</option>
-                                        </select>
+                                        <select name="kind-business" class="selectpicker form-control">
+                                            <option value="Service">Service</option>
+                                            <option value="Product">Product</option>
+                                            <option value="Production">Production</option>
+                                           </select>
                                         <a href="javascript:void(0)" class="editInput">EDIT</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
+
                             <div class="form-group">
                                 <div class="control-label col-md-4">Video duration</div>
                                 <div class="col-md-8">
@@ -449,30 +372,50 @@
                                             <option value="45s">45s</option>
                                             <option value="60s">60s</option>
                                             <option value="90s">90s</option>
-                                            <option value="120s">120s</option>
-                                            <option value="longer">longer</option>
-                                            <option value="not sure">not sure</option>
                                         </select>
                                         <a href="javascript:void(0)" class="editInput">EDIT</a>
                                     </div>
                                 </div>
                             </div>
 
+							<div class="form-group">
+                                <div class="control-label col-md-4">Your budget</div>
+                                <div class="col-md-8">
+                                    <div class="input-container">
+                                        <select name="money" class="selectpicker form-control">
+                                            <option value="up to $1000">up to $1000</option>
+                                            <option value="$1000 - $3000">$1000 - $3000</option>
+                                            <option value="more than $3000">more than $3000</option>
+                                        </select>
+                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="form-group">
+                                <div class="control-label col-md-4">Do you have a script?</div>
+                                <div class="col-md-8">
+                                    <div class="input-container">
+                                        <select name="scriptw" class="selectpicker form-control">
+                                            <option value="Yes">Yes, I have a script.</option>
+                                            <option value="No">No.</option>
+                                        </select>
+                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <div class="control-label col-md-4">Styles that you like</div>
                                 <div class="col-md-8">
                                     <div class="input-container">
                                         <select name="hobbies[]" class="selectpicker form-control" multiple="multiple">
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/1/Rockenfeller3.jpg'>Style 1</a>">Style 1</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/2/3.jpg'>Style 2</a>">Style 2</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/3/Netsol1.jpg'>Style 3</a>">Style 3</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/4/Verasity2.jpg'>Style 4</a>">Style 4</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/5/Aspire1d.jpg'>Style 5</a>">Style 5</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/6/Elias3.jpg'>Style 6</a>">Style 6</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/7/Tanzschmiede3.jpg'>Style 7</a>">Style 7</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/8/KDMotion1.jpg'>Style 8</a>">Style 8</option>
-                                            <option value="<a href='https://beemloop.com/get-a-quote/img/portfolio/9/Scene1.jpg'>Style 9</a>">Style 9</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style1.jpg'>Style 1</a>">Style 1</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style2.jpg'>Style 2</a>">Style 2</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style3.jpg'>Style 3</a>">Style 3</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style4.jpg'>Style 4</a>">Style 4</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style5.jpg'>Style 5</a>">Style 5</option>
+                                            <option value="<a href='https://beemloop.com/get-a-quote/img/style/style6.jpg'>Style 6</a>">Style 6</option>
                                         </select>
                                         <a href="javascript:void(0)" class="editInput">EDIT</a>
                                     </div>
@@ -481,30 +424,11 @@
 
 
                             <div class="form-group">
-                                <div class="control-label col-md-4"><a href="https://beemloop.com/voiceoverartists.html" target="_blank">Voice</a> that you like</div>
+                               <!-- <div class="control-label col-md-4"><a href="https://beemloop.com/voiceoverartists.html" target="_blank">Voice</a> that you like</div>-->
+                                <div class="control-label col-md-4">Voice that you like</div>
                                 <div class="col-md-8">
                                     <div class="input-container">
                                         <input type="text" name="voice" autocomplete="off" spellcheck="false" class="form-control">
-                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="control-label col-md-4">Name</div>
-                                <div class="col-md-8">
-                                    <div class="input-container">
-                                        <input type="text" name="name" autocomplete="off" spellcheck="false" class="form-control">
-                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="control-label col-md-4">Email</div>
-                                <div class="col-md-8">
-                                    <div class="input-container">
-                                        <input type="text" name="email" autocomplete="off" spellcheck="false" class="form-control">
                                         <a href="javascript:void(0)" class="editInput">EDIT</a>
                                     </div>
                                 </div>
@@ -520,6 +444,37 @@
                                 </div>
                             </div>
 
+                            <div class="form-group">
+                                <div class="control-label col-md-4">Name</div>
+                                <div class="col-md-8">
+                                    <div class="input-container">
+                                        <input type="text" name="name" autocomplete="off" spellcheck="false" class="form-control">
+                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="control-label col-md-4">Website</div>
+                                <div class="col-md-8">
+                                    <div class="input-container">
+                                        <input type="text" name="url-site" autocomplete="off" spellcheck="false" class="form-control">
+                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="control-label col-md-4">Email</div>
+                                <div class="col-md-8">
+                                    <div class="input-container">
+                                        <input type="text" name="email" autocomplete="off" spellcheck="false" class="form-control">
+                                        <a href="javascript:void(0)" class="editInput">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <div class="form-group">
                                 <div class="col-md-8 col-sm-12 col-md-offset-4 col-sm-offset-0">
@@ -531,7 +486,7 @@
 
                             <div class="step-confirm-buttons">
                                 <div>
-                                    <a href="javascript:void(0)" class="btn btn-white btn-rounded finishBtn">Ready, Let's Start!</a>
+                                    <a href="javascript:void(0)" class="btn btn-white btn-rounded finishBtn">Confirm</a>
                                     <span>or press "Enter"</span>
                                 </div>
                             </div>
@@ -549,7 +504,8 @@
         </div>
     </div>
 </div>
-
+<!--
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/27013792-a1d4-48b1-bddd-f81c3570e43a/cd.js" type="text/javascript" async></script>
 <!-- Google Adservices-->
 <script>
     /* <![CDATA[ */
@@ -576,22 +532,23 @@
 <script type="text/javascript" src="js/sweetalert.min.js"></script>
 <!--<script type="text/javascript" src="js/plupload.full.min.js"></script>-->
 <script src="../js/magnific-popup/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<!--<script>-->
-<!--    // YOUTUBE POPUP ON MAIN-->
-<!--    $(document).ready(function() {-->
-<!--        $('.popup-youtube').magnificPopup({-->
-<!--            // disableOn: 700,-->
-<!--            type: 'iframe',-->
-<!--            mainClass: 'mfp-fade',-->
-<!--            removalDelay: 160,-->
-<!--            preloader: false,-->
-<!--            fixedContentPos: false,-->
-<!--            // fixedContentPos:true,-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
+<script type="text/javascript" src="js/main.js?ver=119"></script>
+<!-- <script>
+       // YOUTUBE POPUP ON MAIN
+      $(document).ready(function() { -->
+    <!--        $('.popup-youtube').magnificPopup({-->
+    <!--            // disableOn: 700,-->
+    <!--            type: 'iframe',-->
+    <!--            mainClass: 'mfp-fade',-->
+    <!--            removalDelay: 160,-->
+    <!--            preloader: false,-->
+    <!--            fixedContentPos: false,-->
+    <!--            // fixedContentPos:true,-->
+    <!--        });-->
 
+       <!-- }); -->
+
+    </script> -->
 <script>
 
 
@@ -599,84 +556,134 @@
     //     type: 'inline',
     //     preloader: false,
     // });
+var one = document.getElementById('tn_comment_one');
+var two = document.getElementById('tn_comment_two');
+var three = document.getElementById('tn_comment_three');
+
+one.onkeydown = function(event) {
+//alert(event.which);
+  if(one.value.length == 39) {
+	//alert(one.value.substr(one.value.lastIndexOf(' ')+1));
+	if ( event.which != 8 ) {
+		two.value = one.value.substr(one.value.lastIndexOf(' ')+1);
+		one.value = one.value.slice(0, one.value.lastIndexOf(' ')+1);
+		two.focus();
+	}
+  }
+}
+
+two.onkeydown = function() {
+  if(two.value.length == 0) {
+    one.focus();
+  }
+   if(two.value.length == 39) {
+	if ( event.which != 8 )  {
+		three.value = two.value.substr(two.value.lastIndexOf(' ')+1);
+		two.value = two.value.slice(0, two.value.lastIndexOf(' ')+1);
+		three.focus();
+	}
+  }
+}
+
+three.onkeydown = function() {
+  if(three.value.length == 0) {
+    two.focus();
+  }
+}
+
+$( "#choose-voice" ).click(function() {
+  $( "#tn_voice" ).focus();
+});
+
+		 $('.select-link').magnificPopup({
+			type: 'iframe',
+			mainClass: 'modal-mfp1',
+			closeBtnInside: true,
+			closeOnBgClick: true,
+			showCloseBtn: true,
+			preloader: true,
+			enableEscapeKey: true,
+			mainClass: 'my-mfp-voice',
+		 });
 
 
     $('.gallery-item').magnificPopup({
         type: 'image',
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio1').focus();
+			}
+		}
     });
 
 
     $('.gallery-item2').magnificPopup({
         type: 'image',
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio2').focus();
+			}
+		}
     });
 
     $('.gallery-item3').magnificPopup({
         type: 'image',
-
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio3').focus();
+			}
+		}
     });
+
     $('.gallery-item4').magnificPopup({
         type: 'image',
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio4').focus();
+			}
+		}
     });
     $('.gallery-item5').magnificPopup({
         type: 'image',
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio5').focus();
+			}
+		}
     });
     $('.gallery-item6').magnificPopup({
         type: 'image',
+		closeBtnInside: true,
         closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
+        showCloseBtn: true,
+		enableEscapeKey: true,
+		callbacks: {
+			afterClose: function(){
+			$('#tn_style_radio6').focus();
+			}
+		}
     });
-    $('.gallery-item7').magnificPopup({
-        type: 'image',
-        closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
-    });
-    $('.gallery-item8').magnificPopup({
-        type: 'image',
-        closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
-    });
-    $('.gallery-item9').magnificPopup({
-        type: 'image',
-        closeOnBgClick: true,
-        showCloseBtn: false,
-        gallery:{
-            enabled:true
-        }
-    });
+
 
     // $(".bootleggers").owlCarousel({
     //     loop: true,

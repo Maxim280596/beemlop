@@ -4,7 +4,9 @@ $post = (!empty($_POST)) ? true : false;
 
 if($post)
 {
-$email = trim($_POST['email']);
+$email = trim($_POST['email']); 
+$urlsite = trim($_POST['url-site']); 
+$scriptw = trim($_POST['scriptw']); 
 $money = htmlspecialchars($_POST['money']);
 $time = htmlspecialchars($_POST['time']);
 $liked = '';
@@ -40,17 +42,18 @@ $name_tema = "=?utf-8?b?". base64_encode($name) ."?=";
 
 $subject ="New request from Video Configurator - Beemloop.com " .date("d.m.Y h:i:s");
 $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
-/*
-$message ="\n\nСообщение: ".$message."\n\nИмя: " .$name."\n\nТелефон: ".$tel."\n\n";
-*/
 $message1 ="
 <b>Name:</b> ".$name."
 <br><br>
 <b>E-mail:</b> ".$email."
 <br><br>
+<b>Website:</b> ".$urlsite."
+<br><br>
 <b>Budget:</b> ".$money."
 <br><br>
 <b>Duration:</b> ".$time."
+<br><br>
+<b>Do you need scriptwriting services?</b> ".$scriptw."
 <br><br>
 <b>Videos that you like the best: -</b> ".$liked."
 <br><br>
@@ -66,8 +69,8 @@ $message1 ="
 
 $header = "Content-Type: text/html; charset=utf-8\n";
 $header .= "From: New request Video Configurator <beemloop@gmail.com>\n\n";
-$mail = mail("beemloopstudio@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
-//$mail = mail("itworkbohdan@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
+$mail = mail("talli@beemloop.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
+// beemloopstudio $mail = mail("itworkbohdan@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
 if($mail)
 {
         if ($mail) { // якщо отправило то виводимо  success

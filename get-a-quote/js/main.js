@@ -49,33 +49,51 @@ var tunaWizard =
         changeStep: function (stepConfirm, nextStep)
         {
             var self = this;
-            if (nextStep <= 0 && nextStep > 7)
+            if (nextStep <= 0 && nextStep > 10)
             {
                 return false
             };
 
 
-            if (nextStep === 2) {
-                if ($('input[name=\'tn_money\']:checked')['val']() === '') {
-                    self['setInputError']($('input[name=\'tn_money\']'));
-                    return
-                }
+            if (nextStep === 6) {
+				
+            //    if ($('input[name=\'tn_money\']:checked')['val']() === '') {
+             //       self['setInputError']($('input[name=\'tn_money\']'));
+             //       return
+            //    }
+			  
             };
-
+			
             if (nextStep === 3) {
-                if ($('input[name=\'tn_time\']:checked')['val']() === '') {
-                    self['setInputError']($('input[name=\'tn_time\']'));
-                    return
-                }
-            };
+				//alert($('input[name=\'tn_kind\']:checked')['val']());
+              //  if ($('input[name=\'tn_kind\']:checked')['val']() === '') {
+              //      self['setInputError']($('input[name=\'tn_kind\']'));
+              //      return
+              //  }
+			  
+            };			
+
+           // if (nextStep === 2) {
+               // if ($('input[name=\'tn_time\']:checked')['val']() === '') {
+               //     self['setInputError']($('input[name=\'tn_time\']'));
+               //     return
+               // }
+           // };
 
 
-            if (nextStep === 4)
+            if (nextStep === 5)
             {
-                if ($('input[name=\'tn_hobbies[]\']:checked')['length'] === 0 )
+                if ($('input[name=\'tn_hobbies[]\']:checked')['length'] > 3 )
                 {
                     self['setInputError']($('input[name=\'tn_hobbies[]\']'));
                     return
+                };
+					
+                if ($('input[name=\'tn_hobbies[]\']:checked')['length'] === 0 )
+                {
+						
+                    //self['setInputError']($('input[name=\'tn_hobbies[]\']'));
+                    //return
                 };
 
             };
@@ -83,23 +101,31 @@ var tunaWizard =
 
             if (nextStep === 5)
             {
-                if ($('#tn_voice')['val']()['trim']() === '')
-                {
-                    self['setInputError']($('#tn_voice'));
-                    return
-                }
+               // if ($('#tn_voice')['val']()['trim']() === '')
+               // {
+               //     self['setInputError']($('#tn_voice'));
+               //     return
+               // }
             };
-            if (nextStep === 6)
+            if (nextStep === 2)
             {
-                if ($('#tn_name')['val']()['trim']() === '')
-                {
-                    self['setInputError']($('#tn_name'));
-                    return
-                }
+                //if ($('#tn_name')['val']()['trim']() === '')
+               // {
+               //     self['setInputError']($('#tn_name'));
+                //    return
+                //}
             };
 
+			if (nextStep === 4)
+            {
+               // if ($('#tn_url')['val']()['trim']() === '')
+              //  {
+               //     self['setInputError']($('#tn_url'));
+               //     return
+               // }
+            };
 
-            if (nextStep === 7)
+            if (nextStep === 10)
             {
                 if ($('#tn_email')['val']()['trim']() === '' || !self['isEmail']($('#tn_email')['val']()['trim']()))
                 {
@@ -108,13 +134,13 @@ var tunaWizard =
                 }
             };
 
-            if (nextStep === 8)
+            if (nextStep === 10)
             {
-                if ($('#tn_comment')['val']()['trim']() === '')
-                {
-                    self['setInputError']($('#tn_comment'));
-                    return
-                }
+               // if ($('#tn_comment_one')['val']()['trim']() === '')
+               // {
+               //     self['setInputError']($('#tn_comment_one'));
+               //     return
+               // }
             };
 
 
@@ -144,8 +170,10 @@ var tunaWizard =
 
 
 
-
+				stepConfirm['find']('input[name=\'name\']')['val']($('#tn_name')['val']());
+				stepConfirm['find']('input[name=\'url-site\']')['val']($('#tn_url')['val']());
                 stepConfirm['find']('select[name=\'money\']')['selectpicker']('val', $('input[name=\'tn_money\']:checked')['val']());
+				stepConfirm['find']('select[name=\'scriptw\']')['selectpicker']('val', $('input[name=\'tn_script\']:checked')['val']());
                 stepConfirm['find']('select[name=\'time\']')['selectpicker']('val', $('input[name=\'tn_time\']:checked')['val']());
                 var checkBox = $('input[name=\'tn_hobbies[]\']:checked')['map'](function ()
                 {
@@ -155,29 +183,120 @@ var tunaWizard =
                 stepConfirm['find']('input[name=\'voice\']')['val']($('#tn_voice')['val']());
                 stepConfirm['find']('input[name=\'name\']')['val']($('#tn_name')['val']());
                 stepConfirm['find']('input[name=\'email\']')['val']($('#tn_email')['val']());
-                stepConfirm['find']('textarea[name=\'comment\']')['val']($('#tn_comment')['val']());
+                stepConfirm['find']('textarea[name=\'comment\']')['val']($('#tn_comment_one')['val']()+$('#tn_comment_two')['val']()+$('#tn_comment_three')['val']());
 
 
 
             };
             stepsCount['find']('span.step-current')['text'](nextStep);
             var prevStep = $('.prevStep');
+			//alert(nextStep);
             if (nextStep === 1)
             {
                 prevStep['hide']()
+				setTimeout(function(){
+					// $('input[name=tn_kind]:checked', '#block_kind')['focus']()
+					$('input[name=tn_time]:checked', '#block_time')['focus']()
+				}, 200);
             }
             else
             {
                 prevStep['css']('display', 'inline-block')
             }
+	
+			//if (nextStep === 2 )
+           // {
+			//	setTimeout(function(){
+			//		$('input[name=tn_time]:checked', '#block_time')['focus']()
+			//	}, 200);	
+			//}				
+			
+			if (nextStep === 2 )
+            {
+				setTimeout(function(){
+					$('input[name=tn_money]:checked', '#block_money')['focus']()
+				}, 200);	
+			}	
 
+			if (nextStep === 3 )
+            {
+				setTimeout(function(){
+					$('input[name=tn_script]:checked', '#block_script')['focus']()
+				}, 200);	
+			}				
+			
+			if (nextStep === 4 )
+            {
+				//!$('input[name=\'agreement\']')['prop']('checked')
+				if ($('input[name=\'tn_hobbies[]\']:checked')['length'] === 0 )
+                {
+					setTimeout(function(){
+						$('#tn_style_radio1')['focus']();
+						//$('#tn_style_radio1')['attr']('checked', 'checked');
+						$('#tn_style_radio1')['trigger']('click');
+						//alert($('#tn_style_radio1')['attr']('checked'));
+					}, 200);	
+                } else {
+					//var checkBox2[] = $('input[name=\'tn_hobbies[]\']:checked');
+					var checkBox = $('input[name=\'tn_hobbies[]\']:checked')['map'](function ()
+                {
+                    return this['value']
+                })['get']();
+					//var checkBox1 = $('input[name=\'tn_hobbies[]\']:checked')['map'];
+						//alert(checkBox);
+					var selectedCheckBox =  checkBox[0].slice(checkBox[0].indexOf('Style ')+6, checkBox[0].indexOf('Style ')+7);
+						//alert('x'+selectedCheckBox+'x');
+						//alert(checkBox2);
+					setTimeout(function(){
+						$('#tn_style_radio'+selectedCheckBox)['focus']();
+						//$('#tn_style_radio1')['attr']('checked', 'checked');
+						//alert($('#tn_style_radio1')['attr']('checked'));
+					}, 200);							
+					
+				};
 
+			}
 
+			
+			if (nextStep === 5 )
+            {
+				setTimeout(function(){
+					$('#tn_voice')['focus']()
+				}, 200);	
+			}
+			
+			if (nextStep === 6 )
+            {
+				setTimeout(function(){
+					$('#tn_comment_one')['focus']()
+				}, 200);	
+			}	
+
+			if (nextStep === 7 )
+            {
+				setTimeout(function(){
+					$('#tn_name')['focus']()
+				}, 200);	
+			}				
+			
+			if (nextStep === 8 )
+            {
+				setTimeout(function(){
+					$('#tn_url')['focus']()
+				}, 200);	
+			}	
+			
+			if (nextStep === 9 )
+            {
+				setTimeout(function(){
+					$('#tn_email')['focus']()
+				}, 200);	
+			}				
 
             var width = $(window).width();
             if (width < 600)
             {
-                if (nextStep === 2 || nextStep === 3 || nextStep === 4 || nextStep === 5 || nextStep === 6 || nextStep === 7 || nextStep === 8  )
+                if (nextStep === 1 || nextStep === 2 || nextStep === 3 || nextStep === 4 || nextStep === 5 || nextStep === 6 || nextStep === 7 || nextStep === 8 || nextStep === 9 || nextStep === 10 )
                 {
                     $('html, body, .tuna-signup-container').css('overflow', 'scroll');
                 }
@@ -185,7 +304,7 @@ var tunaWizard =
                 {
                      $('html, body, .tuna-signup-container').css('overflow', 'hidden');
                 }
-                if ( nextStep === 2 || nextStep === 4 || nextStep === 5 || nextStep === 6 || nextStep === 7 || nextStep === 8)
+                if ( nextStep === 1 || nextStep === 2 || nextStep === 3 || nextStep === 6 || nextStep === 5 || nextStep === 7 || nextStep === 8 || nextStep === 9 || nextStep === 10)
                 {
                     $('.container').css('overflow-y', 'hidden');
                     $('.tuna-signup-right').css('min-height', '660px');
@@ -193,18 +312,18 @@ var tunaWizard =
                 else
                 {
                     $('.container').css('overflow-y', 'visible');
-                    $('.tuna-signup-right').css('min-height', '2400px');
+                    $('.tuna-signup-right').css('min-height', '1800px');
                 }
-                if (nextStep === 9)
+                if (nextStep === 11)
                 {
                     $('.container').css('overflow-y', 'hidden');
                     $('.tuna-signup-right').css('min-height', '800px');
                 }
             }
             if (width < 600 && width > 410 )
-                if ( nextStep === 3)
+                if ( nextStep === 4)
                 {
-                     $('.tuna-signup-right').css('min-height', '2700px');
+                     $('.tuna-signup-right').css('min-height', '2000px');
                 }
         },
         setInputError: function (paramErorr)
@@ -235,7 +354,9 @@ var tunaWizard =
             $('.tuna-signup-container input[name="phone"],.tuna-signup-container input[name="tn_phone"]')['mask']('000 000 00 00');
             window['setTimeout'](function ()
             {
-                $('#tn_name')['focus']()
+                //$('#tn_name')['focus']()
+				//$('input[name=tn_kind]:checked', '#block_kind')['focus']()
+				$('input[name=tn_time]:checked', '#block_time')['focus']()
             }, 500);
             thisParam['setResponsive']();
             $(window)['resize'](function ()
@@ -244,11 +365,12 @@ var tunaWizard =
             });
             thisParam['stepCount'] = $('.tuna-steps .step')['length'];
             $('.step-count')['text'](thisParam['stepCount']);
-            $('.nextStep')['on']('click', function ()
+            $('.nextStep, .skip_voice')['on']('click', function ()
             {
                 var stepActiveNextParamm = $('.step-active')['attr']('data-step-id');
                 var stepNext = parseFloat(stepActiveNextParamm) + 1;
                 thisParam['changeStep'](stepActiveNextParamm, stepNext)
+				
             });
             $('.prevStep')['on']('click', function ()
             {
@@ -287,12 +409,139 @@ var tunaWizard =
                 $(this)['parents']('.form-group')['find']('a.editInput')['show']()
             });
             $('.step input')['not']('.step-confirm input')['on']('keypress', function (stepParamKeyPressEnter)
+			//$('.tuna-signup-right')['not']('.step-confirm input')['on']('keypress', function (stepParamKeyPressEnter)
             {
+				//alert('enter');
                 if (stepParamKeyPressEnter['keyCode'] === 13)
+                {
+                   // $('.nextStep')['click']()
+                }
+            });
+			$(document).keypress(function(e) {
+                if (e.which === 13)
                 {
                     $('.nextStep')['click']()
                 }
-            });
+			});
+			
+			$('#tn_style_radio1').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 39:
+							$('#tn_style_radio1')['trigger']('click');	
+							$('#tn_style_radio2')['trigger']('click');		
+							$('#tn_style_radio2')['focus']();	
+							break;
+						case 40:
+							$('#tn_style_radio1')['trigger']('click');	
+							$('#tn_style_radio4')['trigger']('click');		
+							$('#tn_style_radio4')['focus']();		
+							break;
+					}
+				}
+			});		
+
+			$('#tn_style_radio2').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 37:
+							$('#tn_style_radio1')['trigger']('click');	
+							$('#tn_style_radio2')['trigger']('click');		
+							$('#tn_style_radio1')['focus']();	
+							break;						
+						case 39:
+							$('#tn_style_radio2')['trigger']('click');	
+							$('#tn_style_radio3')['trigger']('click');		
+							$('#tn_style_radio3')['focus']();	
+							break;
+						case 40:
+							$('#tn_style_radio2')['trigger']('click');	
+							$('#tn_style_radio5')['trigger']('click');		
+							$('#tn_style_radio5')['focus']();		
+							break;
+					}
+				}
+			});	
+			
+			$('#tn_style_radio3').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 37:
+							$('#tn_style_radio3')['trigger']('click');	
+							$('#tn_style_radio2')['trigger']('click');		
+							$('#tn_style_radio2')['focus']();	
+							break;						
+						case 40:
+							$('#tn_style_radio3')['trigger']('click');	
+							$('#tn_style_radio6')['trigger']('click');		
+							$('#tn_style_radio6')['focus']();		
+							break;
+					}
+				}
+			});	
+
+			$('#tn_style_radio4').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 38:
+							$('#tn_style_radio4')['trigger']('click');	
+							$('#tn_style_radio1')['trigger']('click');		
+							$('#tn_style_radio1')['focus']();	
+							break;						
+						case 39:
+							$('#tn_style_radio4')['trigger']('click');	
+							$('#tn_style_radio5')['trigger']('click');		
+							$('#tn_style_radio5')['focus']();	
+							break;
+					}
+				}
+			});		
+
+			$('#tn_style_radio5').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 37:
+							$('#tn_style_radio5')['trigger']('click');	
+							$('#tn_style_radio4')['trigger']('click');		
+							$('#tn_style_radio4')['focus']();	
+							break;						
+						case 39:
+							$('#tn_style_radio5')['trigger']('click');	
+							$('#tn_style_radio6')['trigger']('click');		
+							$('#tn_style_radio6')['focus']();	
+							break;
+						case 38:
+							$('#tn_style_radio2')['trigger']('click');	
+							$('#tn_style_radio5')['trigger']('click');		
+							$('#tn_style_radio2')['focus']();		
+							break;
+					}
+				}
+			});		
+
+			$('#tn_style_radio6').keyup(function(e) {
+				var lBox = $('input[name=\'tn_hobbies[]\']:checked')['length'];
+				if (lBox === 1) { 
+					switch (e.which) {
+						case 37:
+							$('#tn_style_radio6')['trigger']('click');	
+							$('#tn_style_radio5')['trigger']('click');		
+							$('#tn_style_radio5')['focus']();	
+							break;						
+						case 38:
+							$('#tn_style_radio6')['trigger']('click');	
+							$('#tn_style_radio3')['trigger']('click');		
+							$('#tn_style_radio3')['focus']();	
+							break;
+					}
+				}
+			});				
+			
             var signupForm = $('form[name=\'signupForm\']');
             signupForm['find']('input')['on']('keypress', function (formParamKeyPressEnter)
             {
@@ -337,14 +586,16 @@ var tunaWizard =
                 var nameVoice = $(this)['find']('input[name=\'voice\']');
                 if (nameVoice['val']()['trim']() === '')
                 {
-                    nameVoice['addClass']('confirm-input-error')['focus']();
-                    return
+					nameVoice['val'](' ');
+                    //nameVoice['addClass']('confirm-input-error')['focus']();
+                    //return
                 };
                 var nameName = $(this)['find']('input[name=\'name\']');
                 if (nameName['val']()['trim']() === '')
                 {
-                    nameName['addClass']('confirm-input-error')['focus']();
-                    return
+					nameName['val'](' ');
+                //    nameName['addClass']('confirm-input-error')['focus']();
+                 //   return
                 };
                 var nameEmail = $(this)['find']('input[name=\'email\']');
                 if (nameEmail['val']()['trim']() === '' || !thisParam['isEmail'](nameEmail['val']()['trim']()))
@@ -355,8 +606,9 @@ var tunaWizard =
                 var nameComment = $(this)['find']('textarea[name=\'comment\']');
                 if (nameComment['val']()['trim']() === '')
                 {
-                    nameComment['addClass']('confirm-input-error')['focus']();
-                    return
+					nameComment['val'](' ');
+                //    nameComment['addClass']('confirm-input-error')['focus']();
+                 //   return
                 };
 
 
@@ -416,8 +668,16 @@ $['fn']['materialInput'] = function ()
     var This = this;
     This['find']('input.formInput, textarea.formInput')['keydown'](function (_0xd1cfx12)
     {
-        This['setLabel'](_0xd1cfx12['target']);
-        This['checkFocused'](_0xd1cfx12['target'])
+		$this_id = this.id;	
+		if (( $this_id != 'tn_comment_one') && ( $this_id != 'tn_comment_two') && ( $this_id != 'tn_comment_three')) {
+			
+			This['setLabel'](_0xd1cfx12['target']);
+			This['checkFocused'](_0xd1cfx12['target'])
+		} else {
+			
+				This['setLabel'](_0xd1cfx12['target']);
+				This['checkFocused'](_0xd1cfx12['target'])
+		}
     });
     This['find']('input.formInput, textarea.formInput')['focusout'](function (_0xd1cfx12)
     {
@@ -436,7 +696,8 @@ $['fn']['materialInput'] = function ()
     {
         This['getLabel']()['addClass']('active', '');
         $(_0xd1cfx1a)['removeClass']('input-error');
-        $(_0xd1cfx1a)['next']()['hide']();
+       // $(_0xd1cfx1a)['next']()['hide']();
+	   $('.help-error')['hide']();
         $(_0xd1cfx1a)['parent']()['find']('.info')['show']()
     };
     this['checkUnFocused'] = function (_0xd1cfx1a)
@@ -453,6 +714,8 @@ $(document)['ready'](function ()
     $('.tuna-signup-container')['show']();
     $('.tuna-steps')['materialInput']();
     $('.selectpicker')['selectpicker']();
+	//$('.tuna-signup-right').css('min-height', '660px');
+	//$('.tuna-signup-left').css('min-height', '214px');
     tunaWizard['start']()
 });
 

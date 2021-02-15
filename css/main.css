@@ -415,9 +415,12 @@ a:hover {
     -webkit-animation-delay: 1s;
     animation-delay: 1s
 }
+.non-visible {
+    display: none;
+}
 
 .header .caption .butn {
-    padding: 10px 30px;
+    padding: 20px 60px;
     border: 1px solid #eee;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -3119,6 +3122,10 @@ transform: translateY(70px);
     #portfolio_img .navigation li span {
         margin: 3px 5px 0 0px !important;
     }
+    .non-visible {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -3213,6 +3220,10 @@ transform: translateY(70px);
         font-size: 15px;
         padding: 0 15px
     }
+    .non-visible {
+        display: block;
+    }
+
 
     .serv-tabs .content .bord {
         padding-right: 0;

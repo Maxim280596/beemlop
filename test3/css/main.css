@@ -137,6 +137,7 @@ p {
     margin: 0
 }
 
+
 img {
     width: 100%;
     height: auto
@@ -476,6 +477,7 @@ a:hover {
     -webkit-animation-delay: 1s;
     animation-delay: 1s
 }
+
 
 .header .caption .butn {
     padding: 10px 30px;
@@ -1872,14 +1874,14 @@ a:hover {
 }
 
 @-webkit-keyframes fade-2 {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fade-2 {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
-} 
+}
 
 #portfolio_img {
     padding: 0;
@@ -2703,7 +2705,7 @@ img.lazy {
 }
 
 .price .features ul {
-    
+
 }
 
 .price .features li {
@@ -3754,7 +3756,7 @@ img.lazy {
 }
 
 @media only screen and (max-width: 992px) {
-    
+
     #instagram-feed-demo {
         /*display: none;*/
     }
@@ -4235,7 +4237,7 @@ img.lazy {
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .nav-scroll {
         padding-left: 0
     }
@@ -4331,11 +4333,11 @@ img.lazy {
 }
 
 @media only screen and (max-width: 580px) {
-    
+
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .clients {
         padding: 0
     }
@@ -4648,8 +4650,8 @@ img.lazy {
     }
     .modal-link {
         margin-left: 10px;
-        margin-right: 10px; 
-    }   
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -4915,7 +4917,7 @@ img.lazy {
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .parallax-window {
         background-image: none !important;
     }
@@ -4968,7 +4970,7 @@ img.lazy {
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .white-popup-block {
         width: 370px
     }
@@ -5048,11 +5050,11 @@ img.lazy {
 }
 
 @media only screen and (max-width: 400px) {
-    
+
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .item__hidden {
         padding: 0 20px;
     }
@@ -5338,7 +5340,7 @@ img.lazy {
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .white-popup-block {
         width: 350px
     }
@@ -5517,7 +5519,7 @@ img.lazy {
     #instagram-feed-demo {
         /*display: none;*/
     }
-    
+
     .white-popup-block {
         width: 310px
     }
@@ -5940,7 +5942,7 @@ footer li {
 
 .info-hide, .info-hide2, .info-hide3, .info-hide4, .info-hide5 {
     display: none;
-} 
+}
 
 .info-hide + label, .info-hide2 + label, .info-hide3 + label, .info-hide4 + label, .info-hide5 + label {
     cursor: pointer;
@@ -5978,7 +5980,7 @@ footer li {
     padding-bottom: 15px;
     border-bottom: 1px solid #25344E;
     width: 940px;
-    -webkit-animation:fade ease-in 0.5s; 
+    -webkit-animation:fade ease-in 0.5s;
     -moz-animation:fade ease-in 0.5s;
     animation:fade-2 ease-in 0.5s;
 }
@@ -5995,12 +5997,12 @@ to { opacity: 1 }
 
 @keyframes fade {
     from { display: none; }
-    to { display: block; }    
+    to { display: block; }
 }
 
 @keyframes fade-2 {
     from { opacity: 0; }
-to { opacity: 1 }   
+to { opacity: 1 }
 }
 
 .div1, .div2, .div3, .div4, .div5 {
@@ -7003,16 +7005,16 @@ a.gallery__item__link:hover{
     width: auto;
     max-width: 500px;
     margin: 20px auto;
-	text-align: center;	
+	text-align: center;
 	color: #ff8dff;
 	/*width:100px*/
-	
+
 }
 
 /*
 .mfp-content {
 	width: 900px !important;
-	height: 500px !important; 
+	height: 500px !important;
 }*/
 
 /* Cookies */
@@ -7069,7 +7071,7 @@ a.gallery__item__link:hover{
     background-color: #765FFF !important;
     border: 1px solid #765FFF !important;
     padding: 15px 0px 15px !important;
-    width: 100%; 
+    width: 100%;
 }
 /* New cookies */
 #CybotCookiebotDialogBodyButtonDetails {

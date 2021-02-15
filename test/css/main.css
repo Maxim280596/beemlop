@@ -488,7 +488,7 @@ a:hover {
 }
 
 .header .caption p {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 32px;
     color: #fff;
     -webkit-animation-delay: 1s;
@@ -1911,14 +1911,14 @@ a:hover {
 }
 
 @-webkit-keyframes fade-2 {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fade-2 {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
-} 
+}
 
 #portfolio_img {
     padding: 0;
@@ -2755,7 +2755,7 @@ img.lazy {
 }
 
 .price .features ul {
-    
+
 }
 
 .price .features li {
@@ -4398,7 +4398,7 @@ img.lazy {
         letter-spacing: 0;
     }
 
-    
+
 }
 
 @media (max-width: 375px)  {
@@ -5284,7 +5284,7 @@ footer img {
 
 .info-hide, .info-hide2, .info-hide3, .info-hide4, .info-hide5 {
     display: none;
-} 
+}
 
 .info-hide + label, .info-hide2 + label, .info-hide3 + label, .info-hide4 + label, .info-hide5 + label {
     cursor: pointer;
@@ -5322,7 +5322,7 @@ footer img {
     padding-bottom: 15px;
     border-bottom: 1px solid #25344E;
     width: 940px;
-    -webkit-animation:fade ease-in 0.5s; 
+    -webkit-animation:fade ease-in 0.5s;
     -moz-animation:fade ease-in 0.5s;
     animation:fade-2 ease-in 0.5s;
 }
@@ -5337,12 +5337,12 @@ to { opacity: 1 }
 }
 @keyframes fade {
     from { display: none; }
-    to { display: block; }    
+    to { display: block; }
 }
 
 @keyframes fade-2 {
     from { opacity: 0; }
-to { opacity: 1 }   
+to { opacity: 1 }
 }
 
 .div1, .div2, .div3, .div4, .div5 {
@@ -6067,7 +6067,7 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 992px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
@@ -6108,11 +6108,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 767px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .nav-scroll {
         padding-left: 0
     }
@@ -6145,11 +6145,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 580px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .clients {
         padding: 0
     }
@@ -6178,7 +6178,7 @@ transform: translateY(70px);
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .price .item .order a:hover:after {
         width: 0;
         left: 100%;
@@ -6199,11 +6199,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 370px
     }
@@ -6232,11 +6232,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 400px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .item__hidden {
         padding: 0 20px;
     }
@@ -6251,22 +6251,22 @@ transform: translateY(70px);
 
 
 @media only screen and (max-width: 375px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 350px
     }
 }
 
 @media only screen and (max-width: 320px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 310px
     }
@@ -6599,8 +6599,8 @@ a.gallery__item__link:hover{
     }
     .modal-link {
         margin-left: 10px;
-        margin-right: 10px;	
-    }	
+        margin-right: 10px;
+    }
 }
 
 /* ========END PORTFOLIO============*/
@@ -6738,16 +6738,16 @@ a.gallery__item__link:hover{
     width: auto;
     max-width: 500px;
     margin: 20px auto;
-	text-align: center;	
+	text-align: center;
 	color: #ff8dff;
 	/*width:100px*/
-	
+
 }
 
 /*
 .mfp-content {
 	width: 900px !important;
-	height: 500px !important; 
+	height: 500px !important;
 }*/
 
 @media screen and (max-width: 768px) {
@@ -6810,7 +6810,7 @@ a.gallery__item__link:hover{
     background-color: #765FFF !important;
     border: 1px solid #765FFF !important;
     padding: 15px 0px 15px !important;
-    width: 100%; 
+    width: 100%;
 }
 /* New cookies */
 #CybotCookiebotDialogBodyButtonDetails {

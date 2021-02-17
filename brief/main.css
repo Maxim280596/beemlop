@@ -408,7 +408,7 @@ a:hover {
 }
 
 .header .caption p {
-    font-size: 16px;
+    font-size: 24px;
     color: #eee;
     word-spacing: 2px;
     -webkit-animation-delay: 1s;
@@ -1014,7 +1014,7 @@ a:hover {
 	-webkit-transition: all 0.7s ease;
 	-moz-transition: all 0.7s ease;
 	-o-transition: all 0.7s ease;
-	transition: all 0.7s ease;	
+	transition: all 0.7s ease;
 	border: 5px solid #e7e7e7;
 }
 
@@ -1378,7 +1378,7 @@ img.lazy {
 }
 
 .price .features ul {
-    
+
 }
 
 .price .features li {
@@ -3061,7 +3061,7 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 992px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
@@ -3102,11 +3102,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 768px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .nav-scroll {
         padding-left: 0
     }
@@ -3135,11 +3135,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 580px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .clients {
         padding: 0
     }
@@ -3168,7 +3168,7 @@ transform: translateY(70px);
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .price .item .order a:hover:after {
         width: 0;
         left: 100%;
@@ -3186,14 +3186,15 @@ transform: translateY(70px);
     .item__visible p{
         font-size: 30px;
     }
+
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 370px
     }
@@ -3222,11 +3223,11 @@ transform: translateY(70px);
 }
 
 @media only screen and (max-width: 400px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .item__hidden {
         padding: 0 20px;
     }
@@ -3241,22 +3242,22 @@ transform: translateY(70px);
 
 
 @media only screen and (max-width: 375px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 350px
     }
 }
 
 @media only screen and (max-width: 320px) {
-	
+
 	#instagram-feed-demo {
 		/*display: none;*/
 	}
-	
+
     .white-popup-block {
         width: 310px
     }
@@ -3595,8 +3596,8 @@ a.gallery__item__link:hover{
     }
 .modal-link {
     margin-left: 10px;
-    margin-right: 15px;	
-}	
+    margin-right: 15px;
+}
 }
 
 /* ========END PORTFOLIO============*/
@@ -3708,16 +3709,16 @@ a.gallery__item__link:hover{
     width: auto;
     max-width: 500px;
     margin: 20px auto;
-	text-align: center;	
+	text-align: center;
 	color: #ff8dff;
 	/*width:100px*/
-	
+
 }
 
 /*
 .mfp-content {
 	width: 900px !important;
-	height: 500px !important; 
+	height: 500px !important;
 }*/
 
 @media screen and (max-width: 768px) {

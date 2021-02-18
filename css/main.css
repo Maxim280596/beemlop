@@ -474,7 +474,7 @@ a:hover {
 .header .caption .butn-bg {
     background: #ff8dff;
 	border-color: transparent;
-    /*border-color: #ff8dff */
+
 }
 
 .modal-link {
@@ -484,7 +484,7 @@ a:hover {
 	-webkit-border-radius: 4px;
     border-radius: 4px;
 	margin-left: 30px;
-	/*visibility: hidden;*/
+
 }
 
 .modal-link span {
@@ -1545,9 +1545,7 @@ img.lazy {
 	min-height: 415px;
 }
 
-.price .features ul {
 
-}
 
 .price .features li {
     margin: 15px 0 15px 26%;
@@ -2864,7 +2862,6 @@ transform: translateY(70px);
     background-position: 50%;
     background-size: cover;
     position: relative;
-    /*box-shadow: 0 50px 60px rgba(125, 147, 178, .15);*/
     border-radius: 8px;
     cursor: pointer
 }
@@ -3193,9 +3190,7 @@ transform: translateY(70px);
 
 @media only screen and (max-width: 992px) {
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .portfolio-left-block-big {
         left: 240px !important
@@ -3361,9 +3356,7 @@ transform: translateY(70px);
 
 @media only screen and (max-width: 768px) {
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .nav-scroll {
         padding-left: 0
@@ -3503,9 +3496,7 @@ transform: translateY(70px);
         left: 25%;
     }
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .clients {
         padding: 0
@@ -3518,13 +3509,7 @@ transform: translateY(70px);
     .clients .brand img {
         width: 40%
     }
-/*
-    .map {
-        background: url(../img/map.png) no-repeat;
-        background-size: cover;
-        background-position: right;
-    }
-*/
+
     .contact .map {
         height: 300px;
     }
@@ -3627,9 +3612,7 @@ transform: translateY(70px);
 
 @media only screen and (max-width: 480px) {
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .price .item .order a:hover:after {
         width: 0;
@@ -3701,9 +3684,7 @@ transform: translateY(70px);
         height: 100%;
     }
 
-    #instagram-feed-demo {
-        /*display: none;*/
-    }
+
 
     .white-popup-block {
         width: 370px
@@ -3768,9 +3749,7 @@ transform: translateY(70px);
 
 @media only screen and (max-width: 400px) {
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .item__hidden {
         padding: 0 20px;
@@ -3801,9 +3780,7 @@ transform: translateY(70px);
         font-size: 11px;
     }
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .white-popup-block {
         width: 350px
@@ -3874,9 +3851,7 @@ transform: translateY(70px);
         left: 25%;
     }
 
-	#instagram-feed-demo {
-		/*display: none;*/
-	}
+
 
     .navbar .modal-link span {
         font-size: 9px;
@@ -4340,51 +4315,24 @@ a.gallery__item__link:hover{
     padding-bottom: 30px;
 }
 
-#instagram-feed-demo {
-	/*display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-right: 15px;
-	padding-left: 15px;
-	width: 100%;	*/
-}
+
 
 #instagram-feed-demo a{
-	/*display: inline;*/
+
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 26%;
-	/*-webkit-box-shadow: 0 5px 35px 0 rgba(148, 146, 245, .15);
-	box-shadow: 0 5px 35px 0 rgba(148, 146, 245, .15);
-	background-color: #000;
-	min-height: 260px;
-	height: 100%;
-	margin-bottom: 30px;
-	overflow: hidden;	*/
+
 }
 
 #instagram-feed-demo a img{
 	width: 100% !important;
 }
 
-.instagram_profile {
-  /* CSS styles here */
-}
 
-.instagram_profile_image {
-  /* CSS styles here */
-}
-
-.instagram_username {
-  /* CSS styles here */
-}
-
-.instagram_biography {
-  /* CSS styles here */
-}
 
 .instagram_gallery {
 	display: flex;
@@ -4404,15 +4352,11 @@ a.gallery__item__link:hover{
     margin: 20px auto;
 	text-align: center;
 	color: #ff8dff;
-	/*width:100px*/
+
 
 }
 
-/*
-.mfp-content {
-	width: 900px !important;
-	height: 500px !important;
-}*/
+
 
 @media screen and (max-width: 768px) {
    .mfp-content {

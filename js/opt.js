@@ -3,7 +3,7 @@ const images = document.querySelectorAll('img');
 
 const options = {
   root: null,
-  rootMargin: '10px',
+  rootMargin: '800px',
   threshold: 0.1
 }
 

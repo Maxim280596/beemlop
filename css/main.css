@@ -3942,10 +3942,8 @@ transform: translateY(70px);
         background-position: center;
         background-position-x: 14%
     }
-
     .bg-vid {
      display: none;
-
     } */
 
     .hero .item, .services .item, .price .item:hover,.price .active {

@@ -460,4 +460,3 @@ design3.addEventListener("click", designPopap3), $(function () {
 $(window).on('focus', function () {
     $('.owl-next').trigger('click');
 });
-

@@ -1,3 +1,5 @@
+import { template } from "babel-core";
+
 $(function() {
     "use strict";
     var wind = $(window);
